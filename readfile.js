@@ -9,4 +9,3 @@ writeFileSync(
 );
 
 console.log(firstFile, secondFile);
-console.log(newfile);
