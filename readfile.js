@@ -8,4 +8,12 @@ writeFileSync(
   `This is the new written file: ${firstFile}, ${secondFile}`
 );
 
+for(let i = 0; i < 10000; i++) {
+  writeFileSync(
+    "./Content/Subfolder/big-text.txt",
+    `This is the new written file: ${i}\n`,
+    {flag: "a"}
+  );
+}
+
 console.log(firstFile, secondFile);
